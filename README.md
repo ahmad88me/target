@@ -27,9 +27,3 @@ Check new fork
 * 
 	lett/aa.txt
 
-##Changelog 2015-03-13 13:27:54.876451
-
-* lett/newfilea.txt
-
-* 
-	lett/newfileb.txt
