@@ -22,15 +22,5 @@ Check new fork
 
 ##Changelog 2015-03-13 12:30:48.003054
 
-* README.md
-
-* 
-	lett/aa.txt
 
 
-##Changelog 2015-03-13 13:33:45.702079
-
-* lett/newfilea.txt
-
-* 
-	lett/newfileb.txt
