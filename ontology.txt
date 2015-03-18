@@ -3,3 +3,4 @@ This is just a test file
 update
 update\n
 update\n
+update\n
