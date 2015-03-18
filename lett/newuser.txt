@@ -1,6 +1,0 @@
-new user
-another
-script test
-verification
-files check
-

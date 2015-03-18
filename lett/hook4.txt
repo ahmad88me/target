@@ -1,2 +1,0 @@
-fix hook redirect
-another fix

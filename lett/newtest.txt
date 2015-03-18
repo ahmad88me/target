@@ -1,2 +1,0 @@
-New add_hook
-another test
