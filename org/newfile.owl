@@ -4,6 +4,7 @@
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
     xmlns:tur="http://www.blah.com/turismo#">
 
+
 <rdf:Description rdf:about="http://www.blah.com/turismo#plaza">
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
 </rdf:Description>
