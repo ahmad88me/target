@@ -12,3 +12,5 @@
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
     <rdfs:subClassOf rdf:resource="http://www.blah.com/turismo#plaza"/>
 </rdf:Description>
+
+</rdf:RDF>
