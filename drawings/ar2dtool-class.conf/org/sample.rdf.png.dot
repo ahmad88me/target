@@ -1,13 +1,13 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1000"
-node [shape = rectangle, color="red"]; "Bonnie Tyler" "UK" "CBS Records" "9.90" "1988" "Bob Dylan101" "USA" "Columbia" "10.90" "1985" ; /*literals style*/
+node [shape = rectangle, color="red"]; "Bonnie Tyler" "UK" "CBS Records" "9.90" "1988" "Bob Dylan101102103" "USA" "Columbia" "10.90" "1985" ; /*literals style*/
 	"heart" -> "Bonnie Tyler" [ label = "artist" ];
 	"heart" -> "UK" [ label = "country" ];
 	"heart" -> "CBS Records" [ label = "company" ];
 	"heart" -> "9.90" [ label = "price" ];
 	"heart" -> "1988" [ label = "year" ];
-	"Burlesque" -> "Bob Dylan101" [ label = "artist" ];
+	"Burlesque" -> "Bob Dylan101102103" [ label = "artist" ];
 	"Burlesque" -> "USA" [ label = "country" ];
 	"Burlesque" -> "Columbia" [ label = "company" ];
 	"Burlesque" -> "10.90" [ label = "price" ];
