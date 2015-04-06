@@ -1,8 +1,0 @@
-digraph ar2dtool_diagram { 
-rankdir=LR;
-size="1000"
-	"plaza" -> "Class" [ label = "type" ];
-	"plazaSinFuente" -> "Class" [ label = "type" ];
-	"plazaSinFuente" -> "plaza" [ label = "subClassOf" ];
-
-}
