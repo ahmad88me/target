@@ -4,15 +4,15 @@
     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
     xmlns:oops="http://www.oeg-upm.net/oops#"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" > 
-  <rdf:Description rdf:about="http://www.oeg-upm.net/oops/95e2d8d7-3412-4bbe-b4c3-e934154ad486">
-    <oops:hasPitfall rdf:resource="http://www.oeg-upm.net/oops/5c323ca7-b0de-4ee5-a790-f0dd39ac0bea"/>
-    <oops:hasPitfall rdf:resource="http://www.oeg-upm.net/oops/9f62dd43-fd16-4db4-88af-bfdbebe57c18"/>
-    <oops:hasPitfall rdf:resource="http://www.oeg-upm.net/oops/5571f980-dfe9-4db1-a2dd-97695a19fb84"/>
-    <oops:hasPitfall rdf:resource="http://www.oeg-upm.net/oops/c1839a3a-47f0-44a8-a52b-6ecdd6986e6c"/>
-    <oops:hasPitfall rdf:resource="http://www.oeg-upm.net/oops/e9dd0e3c-f9b7-4d67-b7cd-0a4140b06d85"/>
+  <rdf:Description rdf:about="http://www.oeg-upm.net/oops/68baa9c4-df13-454a-9584-468cb5106f63">
+    <oops:hasPitfall rdf:resource="http://www.oeg-upm.net/oops/c725128d-3550-48fc-8fe8-3b4a20716aa1"/>
+    <oops:hasPitfall rdf:resource="http://www.oeg-upm.net/oops/a8088ef2-2059-4447-b170-4971347137f2"/>
+    <oops:hasPitfall rdf:resource="http://www.oeg-upm.net/oops/b6be67e6-0bbc-4d18-9d08-1d3777ee84a9"/>
+    <oops:hasPitfall rdf:resource="http://www.oeg-upm.net/oops/67a918cf-e461-4476-bfeb-867a8888c703"/>
+    <oops:hasPitfall rdf:resource="http://www.oeg-upm.net/oops/9eef0b72-f429-4136-987e-06dff4c1ca22"/>
     <rdf:type rdf:resource="http://www.oeg-upm.net/oops#response"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.oeg-upm.net/oops/e9dd0e3c-f9b7-4d67-b7cd-0a4140b06d85">
+  <rdf:Description rdf:about="http://www.oeg-upm.net/oops/9eef0b72-f429-4136-987e-06dff4c1ca22">
     <oops:hasImportanceLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Minor</oops:hasImportanceLevel>
     <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.oeg-upm.net/oops#suggestion</oops:hasAffectedElement>
     <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.oeg-upm.net/oops#warning</oops:hasAffectedElement>
@@ -23,7 +23,10 @@
     <oops:hasCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">P04</oops:hasCode>
     <rdf:type rdf:resource="http://www.oeg-upm.net/oops#pitfall"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.oeg-upm.net/oops/c1839a3a-47f0-44a8-a52b-6ecdd6986e6c">
+  <rdf:Description rdf:about="http://www.oeg-upm.net/oops#suggestion">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.oeg-upm.net/oops/67a918cf-e461-4476-bfeb-867a8888c703">
     <oops:hasImportanceLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Minor</oops:hasImportanceLevel>
     <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.oeg-upm.net/oops#suggestion</oops:hasAffectedElement>
     <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.oeg-upm.net/oops#warning</oops:hasAffectedElement>
@@ -34,21 +37,10 @@
     <oops:hasCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">P08</oops:hasCode>
     <rdf:type rdf:resource="http://www.oeg-upm.net/oops#pitfall"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.oeg-upm.net/oops#suggestion">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
   <rdf:Description rdf:about="http://www.oeg-upm.net/oops#warning">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.oeg-upm.net/oops/5571f980-dfe9-4db1-a2dd-97695a19fb84">
-    <oops:hasNumberAffectedElements rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</oops:hasNumberAffectedElements>
-    <oops:hasImportanceLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Important</oops:hasImportanceLevel>
-    <oops:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The ontology lacks disjoint axioms between classes or between properties that should be defined as disjoint. For example, we can create the classes "Odd" and "Even" (or the classes "Prime" and "Composite") without being disjoint; such representation is not correct based on the definition of these types of numbers.</oops:hasDescription>
-    <oops:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Missing disjointness [1, 2, 3]</oops:hasName>
-    <oops:hasCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">P10</oops:hasCode>
-    <rdf:type rdf:resource="http://www.oeg-upm.net/oops#pitfall"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.oeg-upm.net/oops/9f62dd43-fd16-4db4-88af-bfdbebe57c18">
+  <rdf:Description rdf:about="http://www.oeg-upm.net/oops/a8088ef2-2059-4447-b170-4971347137f2">
     <oops:hasNumberAffectedElements rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</oops:hasNumberAffectedElements>
     <oops:hasImportanceLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Important</oops:hasImportanceLevel>
     <oops:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The owl:Ontology tag aims at gathering metadata about a given ontology as version information, creation date, etc. It is also used to declare the inclusion of other ontologies. Not declaring this tag is consider as a bad practice for owl ontologies as it is a symptom of not providing useful metadata as proposed in LDV2. An example of this pitfall (at 29th June, 2012) could be found at the "Creative Commons Rights Expression Language (cc)" ontology, which URI is http://creativecommons.org/ns, that does not have any owl:Ontology declaration in its RDF file even though there are other OWL elements used as, for example, owl:equivalentProperty.</oops:hasDescription>
@@ -56,12 +48,20 @@
     <oops:hasCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">P38</oops:hasCode>
     <rdf:type rdf:resource="http://www.oeg-upm.net/oops#pitfall"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.oeg-upm.net/oops/5c323ca7-b0de-4ee5-a790-f0dd39ac0bea">
+  <rdf:Description rdf:about="http://www.oeg-upm.net/oops/c725128d-3550-48fc-8fe8-3b4a20716aa1">
     <oops:hasNumberAffectedElements rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</oops:hasNumberAffectedElements>
     <oops:hasImportanceLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Critical</oops:hasImportanceLevel>
     <oops:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In the case of not having defined the ontology URI nor the xml:base namespace, the ontology namespace is matched to the file location. This situation is not desirable as the location of a file might change while the ontology should remain stable as proposed in LDV1. An example of this pitfall (at 29th June, 2012) could be found at the "Basic Access Control ontology (acl)" with URI http://www.w3.org/ns/auth/acl has no owl:Ontology tag nor xml:base def-inition.</oops:hasDescription>
     <oops:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ambiguous namespace</oops:hasName>
     <oops:hasCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">P39</oops:hasCode>
+    <rdf:type rdf:resource="http://www.oeg-upm.net/oops#pitfall"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.oeg-upm.net/oops/b6be67e6-0bbc-4d18-9d08-1d3777ee84a9">
+    <oops:hasNumberAffectedElements rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</oops:hasNumberAffectedElements>
+    <oops:hasImportanceLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Important</oops:hasImportanceLevel>
+    <oops:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The ontology lacks disjoint axioms between classes or between properties that should be defined as disjoint. For example, we can create the classes "Odd" and "Even" (or the classes "Prime" and "Composite") without being disjoint; such representation is not correct based on the definition of these types of numbers.</oops:hasDescription>
+    <oops:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Missing disjointness [1, 2, 3]</oops:hasName>
+    <oops:hasCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">P10</oops:hasCode>
     <rdf:type rdf:resource="http://www.oeg-upm.net/oops#pitfall"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.oeg-upm.net/oops#pitfall">
