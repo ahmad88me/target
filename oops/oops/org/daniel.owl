@@ -1,0 +1,70 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:oops="http://www.oeg-upm.net/oops#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" > 
+  <rdf:Description rdf:about="http://www.oeg-upm.net/oops/8e8240c1-3ec1-4282-9b56-fc4cb9cda9ff">
+    <oops:hasImportanceLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Minor</oops:hasImportanceLevel>
+    <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.oeg-upm.net/oops#suggestion</oops:hasAffectedElement>
+    <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.oeg-upm.net/oops#warning</oops:hasAffectedElement>
+    <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.oeg-upm.net/oops#pitfall</oops:hasAffectedElement>
+    <oops:hasNumberAffectedElements rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</oops:hasNumberAffectedElements>
+    <oops:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ontology elements (classes, relationships or attributes) are created with no relation to the rest of the ontology. An example of this type of pitfall is to create the relationship "memberOfTeam" and to miss the class representing teams; thus, the relationship created is isolated in the ontology.</oops:hasDescription>
+    <oops:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Creating unconnected ontology elements</oops:hasName>
+    <oops:hasCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">P04</oops:hasCode>
+    <rdf:type rdf:resource="http://www.oeg-upm.net/oops#pitfall"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.oeg-upm.net/oops/0921650e-21c2-4ce9-9252-dfb172f91ea4">
+    <oops:hasNumberAffectedElements rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</oops:hasNumberAffectedElements>
+    <oops:hasImportanceLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Critical</oops:hasImportanceLevel>
+    <oops:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In the case of not having defined the ontology URI nor the xml:base namespace, the ontology namespace is matched to the file location. This situation is not desirable as the location of a file might change while the ontology should remain stable as proposed in LDV1. An example of this pitfall (at 29th June, 2012) could be found at the "Basic Access Control ontology (acl)" with URI http://www.w3.org/ns/auth/acl has no owl:Ontology tag nor xml:base def-inition.</oops:hasDescription>
+    <oops:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ambiguous namespace</oops:hasName>
+    <oops:hasCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">P39</oops:hasCode>
+    <rdf:type rdf:resource="http://www.oeg-upm.net/oops#pitfall"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.oeg-upm.net/oops/c1735979-e81d-49f2-964b-57405f650899">
+    <oops:hasNumberAffectedElements rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</oops:hasNumberAffectedElements>
+    <oops:hasImportanceLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Important</oops:hasImportanceLevel>
+    <oops:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The owl:Ontology tag aims at gathering metadata about a given ontology as version information, creation date, etc. It is also used to declare the inclusion of other ontologies. Not declaring this tag is consider as a bad practice for owl ontologies as it is a symptom of not providing useful metadata as proposed in LDV2. An example of this pitfall (at 29th June, 2012) could be found at the "Creative Commons Rights Expression Language (cc)" ontology, which URI is http://creativecommons.org/ns, that does not have any owl:Ontology declaration in its RDF file even though there are other OWL elements used as, for example, owl:equivalentProperty.</oops:hasDescription>
+    <oops:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">No OWL ontology declaration</oops:hasName>
+    <oops:hasCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">P38</oops:hasCode>
+    <rdf:type rdf:resource="http://www.oeg-upm.net/oops#pitfall"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.oeg-upm.net/oops#suggestion">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.oeg-upm.net/oops/12df9742-820d-4bc7-9d74-43cf119ba11e">
+    <oops:hasImportanceLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Minor</oops:hasImportanceLevel>
+    <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.oeg-upm.net/oops#suggestion</oops:hasAffectedElement>
+    <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.oeg-upm.net/oops#warning</oops:hasAffectedElement>
+    <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.oeg-upm.net/oops#pitfall</oops:hasAffectedElement>
+    <oops:hasNumberAffectedElements rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</oops:hasNumberAffectedElements>
+    <oops:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ontology terms lack annotations properties. This kind of properties improves the ontology understanding and usability from a user point of view.</oops:hasDescription>
+    <oops:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Missing annotations</oops:hasName>
+    <oops:hasCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">P08</oops:hasCode>
+    <rdf:type rdf:resource="http://www.oeg-upm.net/oops#pitfall"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.oeg-upm.net/oops/95db2c7e-7c48-47f8-a5ad-5a13fa27648b">
+    <oops:hasNumberAffectedElements rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</oops:hasNumberAffectedElements>
+    <oops:hasImportanceLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Important</oops:hasImportanceLevel>
+    <oops:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The ontology lacks disjoint axioms between classes or between properties that should be defined as disjoint. For example, we can create the classes "Odd" and "Even" (or the classes "Prime" and "Composite") without being disjoint; such representation is not correct based on the definition of these types of numbers.</oops:hasDescription>
+    <oops:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Missing disjointness [1, 2, 3]</oops:hasName>
+    <oops:hasCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">P10</oops:hasCode>
+    <rdf:type rdf:resource="http://www.oeg-upm.net/oops#pitfall"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.oeg-upm.net/oops#warning">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.oeg-upm.net/oops/999e75b2-b92e-481f-b90f-e16d390be566">
+    <oops:hasPitfall rdf:resource="http://www.oeg-upm.net/oops/0921650e-21c2-4ce9-9252-dfb172f91ea4"/>
+    <oops:hasPitfall rdf:resource="http://www.oeg-upm.net/oops/c1735979-e81d-49f2-964b-57405f650899"/>
+    <oops:hasPitfall rdf:resource="http://www.oeg-upm.net/oops/95db2c7e-7c48-47f8-a5ad-5a13fa27648b"/>
+    <oops:hasPitfall rdf:resource="http://www.oeg-upm.net/oops/12df9742-820d-4bc7-9d74-43cf119ba11e"/>
+    <oops:hasPitfall rdf:resource="http://www.oeg-upm.net/oops/8e8240c1-3ec1-4282-9b56-fc4cb9cda9ff"/>
+    <rdf:type rdf:resource="http://www.oeg-upm.net/oops#response"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.oeg-upm.net/oops#pitfall">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+</rdf:RDF>
