@@ -1,0 +1,31 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+	"HardMode" -> "Achievement" [ label = "subClassOf" ];
+	"Player" -> "Agent" [ label = "subClassOf" ];
+	"Virtuosity" -> "Achievement" [ label = "subClassOf" ];
+	"Loyalty" -> "Achievement" [ label = "subClassOf" ];
+	"Paragon" -> "Achievement" [ label = "subClassOf" ];
+	"Luck" -> "Achievement" [ label = "subClassOf" ];
+	"MenuEvent" -> "InstantaneousEvent" [ label = "subClassOf" ];
+	"GainEvent" -> "GameEvent" [ label = "subClassOf" ];
+	"SpecialPlayStyle" -> "Achievement" [ label = "subClassOf" ];
+	"Tutorial" -> "Achievement" [ label = "subClassOf" ];
+	"Session" -> "Thing" [ label = "subClassOf" ];
+	"GameProduct" -> "ffc" [ label = "subClassOf" ];
+	"GameProduct" -> "Product" [ label = "subClassOf" ];
+	"GameProduct" -> "ProductOrService" [ label = "subClassOf" ];
+	"LoseEvent" -> "GameEvent" [ label = "subClassOf" ];
+	"Collection" -> "Achievement" [ label = "subClassOf" ];
+	"Leaderboard" -> "Thing" [ label = "subClassOf" ];
+	"Veteran" -> "Achievement" [ label = "subClassOf" ];
+	"Multiplayer" -> "Achievement" [ label = "subClassOf" ];
+	"Fandom" -> "Achievement" [ label = "subClassOf" ];
+	"Curiosity" -> "Achievement" [ label = "subClassOf" ];
+	"PlayerEvent" -> "InstantaneousEvent" [ label = "subClassOf" ];
+	"InAppPurchaseEvent" -> "InstantaneousEvent" [ label = "subClassOf" ];
+	"Completion" -> "Achievement" [ label = "subClassOf" ];
+	"GameEvent" -> "InstantaneousEvent" [ label = "subClassOf" ];
+	"Minigame" -> "Achievement" [ label = "subClassOf" ];
+
+}
