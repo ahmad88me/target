@@ -5,17 +5,17 @@ hasNumberAffectedElements: "10"
 hasImportanceLevel: "Minor"
 type: <http://www.oeg-upm.net/oops#pitfall>
 ====================
+hasCode: "SUGGESTION: symmetric or transitive object properties."
+hasDescription: "The domain and range axioms are equal for each of the following object properties. Could they be symmetric or transitive?"
+hasNumberAffectedElements: "2"
+type: <http://www.oeg-upm.net/oops#suggestion>
+====================
 hasName: "Missing annotations"
 hasCode: "P08"
 hasDescription: "Ontology terms lack annotations properties. This kind of properties improves the ontology understanding and usability from a user point of view."
 hasNumberAffectedElements: "23"
 hasImportanceLevel: "Minor"
 type: <http://www.oeg-upm.net/oops#pitfall>
-====================
-hasCode: "SUGGESTION: symmetric or transitive object properties."
-hasDescription: "The domain and range axioms are equal for each of the following object properties. Could they be symmetric or transitive?"
-hasNumberAffectedElements: "2"
-type: <http://www.oeg-upm.net/oops#suggestion>
 ====================
 hasName: "Missing disjointness [1, 2, 3]"
 hasCode: "P10"
