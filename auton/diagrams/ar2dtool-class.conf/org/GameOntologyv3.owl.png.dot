@@ -44,7 +44,7 @@ This ontology defines various subclasses of vgo:Achievement, which are all based
 	"http://purl.org/net/VideoGameOntology#GameProduct" -> "game product@en" [ label = "rdfs:label" ];
 	"http://purl.org/net/VideoGameOntology#GameProduct" -> "http://purl.org/goodrelations/v1#ProductOrService" [ label = "rdfs:subClassOf" ];
 	"http://purl.org/net/VideoGameOntology#GameProduct" -> "http://schema.org/Product" [ label = "rdfs:subClassOf" ];
-	"http://purl.org/net/VideoGameOntology#GameProduct" -> "56243522:14cd1007c04:-7ffc" [ label = "rdfs:subClassOf" ];
+	"http://purl.org/net/VideoGameOntology#GameProduct" -> "-231ad656:14cd15363cf:-7ffc" [ label = "rdfs:subClassOf" ];
 	"http://purl.org/net/VideoGameOntology#GameProduct" -> "A vgo:GameProduct is anything that is for sale inside a game. These can be either normal game items purchased with in-game currency or with real world money. An example of vgo:GameProduct could be a consumable health potion bought with real money, a better weapon or some visual improvement (e.g. Hats in Steam). Basically a game product can be anything, a character, an item or an achievement.
 GameProduct is a subclass of Good Relations: ProductOrService & schema:Product. Since vgo:GameProduct is a type of buyable product, it reuses the properties available in the schema and Good Relations, such as currency price, validity of the offer and so on.@en" [ label = "rdfs:comment" ];
 	"http://purl.org/net/VideoGameOntology#isEventTriggeredByCharacter" -> "owl:ObjectProperty" [ label = "rdf:type" ];
@@ -162,15 +162,15 @@ This ontology defines various subclasses of vgo:Achievement, which are all based
 	"owl:Thing" -> "owl:Class" [ label = "rdf:type" ];
 	"NULL" -> "owl:Class" [ label = "rdf:type" ];
 	"NULL" -> "http://purl.org/net/VideoGameOntology#Character" [ label = "rdf:first" ];
-	"NULL" -> "56243522:14cd1007c04:-7ffa" [ label = "rdf:rest" ];
 	"NULL" -> "http://purl.org/net/VideoGameOntology#PlayingArea" [ label = "rdf:first" ];
-	"NULL" -> "56243522:14cd1007c04:-7ff9" [ label = "rdf:rest" ];
+	"NULL" -> "-231ad656:14cd15363cf:-7ff8" [ label = "rdf:rest" ];
 	"NULL" -> "http://purl.org/net/VideoGameOntology#Achievement" [ label = "rdf:first" ];
-	"NULL" -> "56243522:14cd1007c04:-7ffb" [ label = "owl:unionOf" ];
-	"NULL" -> "56243522:14cd1007c04:-7ff8" [ label = "rdf:rest" ];
+	"NULL" -> "-231ad656:14cd15363cf:-7ff7" [ label = "rdf:rest" ];
 	"NULL" -> "rdf:nil" [ label = "rdf:rest" ];
+	"NULL" -> "-231ad656:14cd15363cf:-7ffb" [ label = "owl:unionOf" ];
 	"NULL" -> "http://purl.org/net/VideoGameOntology#Item" [ label = "rdf:first" ];
-	"NULL" -> "56243522:14cd1007c04:-7ff7" [ label = "rdf:rest" ];
+	"NULL" -> "-231ad656:14cd15363cf:-7ffa" [ label = "rdf:rest" ];
+	"NULL" -> "-231ad656:14cd15363cf:-7ff9" [ label = "rdf:rest" ];
 	"NULL" -> "http://purl.org/net/VideoGameOntology#Game" [ label = "rdf:first" ];
 	"http://purl.org/net/VideoGameOntology#Virtuosity" -> "owl:Class" [ label = "rdf:type" ];
 	"http://purl.org/net/VideoGameOntology#Virtuosity" -> "Virtuosity@en" [ label = "rdfs:label" ];
