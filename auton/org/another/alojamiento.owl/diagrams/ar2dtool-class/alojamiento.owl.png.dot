@@ -1,0 +1,45 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; "base:Hotel" "schema:Hostel" "base:Hostal" "cruzar:Alojamiento" "base:Alojamiento" "schema:BedAndBreakfast" "geonames:Feature" "base:Apartahotel" "schema:Motel" "schema:LodgingBusiness" "skos:Concept" "schema:Hotel" "base:Albergue" "-5b3eaa50:14d2a57651f:-7ffb" "-5b3eaa50:14d2a57651f:-7ffc" ; /*classes style*/
+	"base:Alojamiento" -> "-5b3eaa50:14d2a57651f:-7ffb" [ label = "rdfs:subClassOf" ];
+	"base:Alojamiento" -> "-5b3eaa50:14d2a57651f:-7ffc" [ label = "rdfs:subClassOf" ];
+	"base:Alojamiento" -> "cruzar:Alojamiento" [ label = "rdfs:subClassOf" ];
+	"base:Alojamiento" -> "http://vocab.linkeddata.es/datosabiertos/def/turismo/alojamiento" [ label = "rdfs:isDefinedBy" ];
+	"base:Alojamiento" -> "geonames:Feature" [ label = "rdfs:subClassOf" ];
+	"base:Alojamiento" -> "schema:LodgingBusiness" [ label = "rdfs:subClassOf" ];
+	"http://vocab.linkeddata.es/datosabiertos/def/turismo/alojamiento" -> "base:" [ label = "vann:preferredNamespaceUri" ];
+	"http://vocab.linkeddata.es/datosabiertos/def/turismo/alojamiento" -> "http://vocab.linkeddata.es/datosabiertos/def/turismo/alojamiento.owl" [ label = "dcterms:hasFormat" ];
+	"http://vocab.linkeddata.es/datosabiertos/def/turismo/alojamiento" -> "http://vocab.linkeddata.es/datosabiertos/def/turismo/alojamiento/0.1" [ label = "owl:versionIRI" ];
+	"http://vocab.linkeddata.es/datosabiertos/def/turismo/alojamiento" -> "http://vocab.linkeddata.es/datosabiertos/def/turismo/alojamiento.html" [ label = "dcterms:hasFormat" ];
+	"http://vocab.linkeddata.es/datosabiertos/def/turismo/alojamiento" -> "http://creativecommons.org/licenses/by/4.0/" [ label = "cc:license" ];
+	"schema:BedAndBreakfast" -> "schema:LodgingBusiness" [ label = "rdfs:subClassOf" ];
+	"base:Albergue" -> "http://vocab.linkeddata.es/datosabiertos/def/turismo/alojamiento" [ label = "rdfs:isDefinedBy" ];
+	"base:Albergue" -> "base:Alojamiento" [ label = "rdfs:subClassOf" ];
+	"base:Albergue" -> "schema:Hostel" [ label = "rdfs:subClassOf" ];
+	"base:Hostal" -> "http://vocab.linkeddata.es/datosabiertos/def/turismo/alojamiento" [ label = "rdfs:isDefinedBy" ];
+	"base:Hostal" -> "base:Alojamiento" [ label = "rdfs:subClassOf" ];
+	"base:Hostal" -> "schema:LodgingBusiness" [ label = "rdfs:subClassOf" ];
+	"schema:Hotel" -> "schema:LodgingBusiness" [ label = "rdfs:subClassOf" ];
+	"base:Hotel" -> "http://vocab.linkeddata.es/datosabiertos/def/turismo/alojamiento" [ label = "rdfs:isDefinedBy" ];
+	"base:Hotel" -> "base:Alojamiento" [ label = "rdfs:subClassOf" ];
+	"base:Hotel" -> "schema:Hotel" [ label = "rdfs:subClassOf" ];
+	"base:categoria" -> "http://vocab.linkeddata.es/datosabiertos/def/turismo/alojamiento" [ label = "rdfs:isDefinedBy" ];
+	"geonames:featureClass" -> "dcterms:type" [ label = "rdfs:subPropertyOf" ];
+	"schema:Motel" -> "schema:LodgingBusiness" [ label = "rdfs:subClassOf" ];
+	"schema:Hostel" -> "schema:LodgingBusiness" [ label = "rdfs:subClassOf" ];
+	"base:numHabitaciones" -> "http://vocab.linkeddata.es/datosabiertos/def/turismo/alojamiento" [ label = "rdfs:isDefinedBy" ];
+	"base:numCamas" -> "http://vocab.linkeddata.es/datosabiertos/def/turismo/alojamiento" [ label = "rdfs:isDefinedBy" ];
+	"NULL" -> "geonames:S.HTL" [ label = "owl:hasValue" ];
+	"NULL" -> "geonames:featureCode" [ label = "owl:onProperty" ];
+	"NULL" -> "geonames:S" [ label = "owl:hasValue" ];
+	"NULL" -> "geonames:featureClass" [ label = "owl:onProperty" ];
+	"base:Apartahotel" -> "http://vocab.linkeddata.es/datosabiertos/def/turismo/alojamiento" [ label = "rdfs:isDefinedBy" ];
+	"base:Apartahotel" -> "base:Alojamiento" [ label = "rdfs:subClassOf" ];
+	"base:Apartahotel" -> "schema:LodgingBusiness" [ label = "rdfs:subClassOf" ];
+	"geonames:featureCode" -> "dcterms:type" [ label = "rdfs:subPropertyOf" ];
+	"base:Alojamiento" -> "xsd:integer" [ label = "base:numHabitaciones" ];
+	"base:Alojamiento" -> "xsd:integer" [ label = "base:numCamas" ];
+	"base:Alojamiento" -> "skos:Concept" [ label = "base:categoria" ];
+
+}
