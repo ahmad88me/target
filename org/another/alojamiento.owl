@@ -22,10 +22,6 @@
 ]>
 
 
-//adding utf8
-// testing again
-//testing utf8
-
 <rdf:RDF xmlns="http://vocab.linkeddata.es/datosabiertos/def/turismo/alojamiento#"
      xml:base="http://vocab.linkeddata.es/datosabiertos/def/turismo/alojamiento"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
