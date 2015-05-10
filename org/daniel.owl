@@ -45,7 +45,7 @@
    // removing .conf
    // and fixing class diagram config
    // generate oops html from widoco
-    // testing settings should work after mongoengine 
+    // testing settings should work after mongoengine and pymongo 
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
