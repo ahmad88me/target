@@ -47,7 +47,7 @@
    // generate oops html from widoco
     // testing settings should work after mongoengine and pymongo 
     // for some reason the setting still doesn't work
-    //trying to fix the model
+    //trying to fix the model still didn't help
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
