@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <!DOCTYPE rdf:RDF [
 	<!ENTITY dct "http://purl.org/dc/terms/">
 	<!ENTITY fibo-be-le-lp "http://spec.edmcouncil.org/fibo/BE/LegalEntities/LegalPersons/">
