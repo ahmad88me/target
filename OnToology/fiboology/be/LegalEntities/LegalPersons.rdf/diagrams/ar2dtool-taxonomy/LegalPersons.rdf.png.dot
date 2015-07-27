@@ -1,0 +1,16 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "fibo-be-le-lp:StatutoryBody" "fibo-be-le-lp:Signatory" "fibo-be-le-lp:PowerOfAttorney" "fibo-be-le-lp:NaturalPerson" "fibo-be-le-lp:LegalPerson" "fibo-be-le-lp:LegalEntity" "fibo-be-le-lp:JuridicalPerson" "fibo-be-le-lp:CharteredBody" ; /*classes style*/
+	"fibo-be-le-lp:CharteredBody" -> "fibo-be-le-lp:LegalEntity" [ label = "rdfs:subClassOf" ];
+	"fibo-be-le-lp:NaturalPerson" -> "fibo-fnd-aap-ppl:Adult" [ label = "rdfs:subClassOf" ];
+	"fibo-be-le-lp:NaturalPerson" -> "fibo-be-le-lp:LegalPerson" [ label = "rdfs:subClassOf" ];
+	"fibo-be-le-lp:LegalEntity" -> "fibo-be-le-lp:LegalPerson" [ label = "rdfs:subClassOf" ];
+	"fibo-be-le-lp:StatutoryBody" -> "fibo-be-le-lp:LegalEntity" [ label = "rdfs:subClassOf" ];
+	"fibo-be-le-lp:LegalPerson" -> "fibo-fnd-aap-agt:AutonomousAgent" [ label = "rdfs:subClassOf" ];
+	"fibo-be-le-lp:PowerOfAttorney" -> "fibo-fnd-law-lcap:LegalCapacity" [ label = "rdfs:subClassOf" ];
+	"fibo-be-le-lp:JuridicalPerson" -> "fibo-fnd-org-fm:FormalOrganization" [ label = "rdfs:subClassOf" ];
+	"fibo-be-le-lp:JuridicalPerson" -> "fibo-be-le-lp:LegalEntity" [ label = "rdfs:subClassOf" ];
+	"fibo-be-le-lp:Signatory" -> "fibo-fnd-pty-pty:PartyInRole" [ label = "rdfs:subClassOf" ];
+
+}

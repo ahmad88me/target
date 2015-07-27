@@ -1,0 +1,33 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; "fibo-be-le-lp:Signatory" "fibo-be-le-lp:NaturalPerson" "fibo-be-le-lp:LegalPerson" "fibo-be-le-lp:LegalEntity" ; /*classes style*/
+	"fibo-be-le-lp:NaturalPerson" -> "fibo-fnd-aap-ppl:IncapacitatedAdult" [ label = "owl:disjointWith" ];
+	"fibo-be-le-lp:LegalEntity" -> "fibo-be-le-lp:NaturalPerson" [ label = "owl:disjointWith" ];
+	"fibo-be-le-lp:isOrganizedIn" -> "fibo-be-le-lp:isRecognizedIn" [ label = "rdfs:subPropertyOf" ];
+	"fibo-be-le-lp:designatesSignatory" -> "fibo-fnd-rel-rel:designates" [ label = "rdfs:subPropertyOf" ];
+	"fibo-be-le-lp:" -> "fibo-fnd-law-lcap:" [ label = "owl:imports" ];
+	"fibo-be-le-lp:" -> "fibo-fnd-org-fm:" [ label = "owl:imports" ];
+	"fibo-be-le-lp:" -> "fibo-fnd-aap-agt:" [ label = "owl:imports" ];
+	"fibo-be-le-lp:" -> "fibo-fnd-rel-rel:" [ label = "owl:imports" ];
+	"fibo-be-le-lp:" -> "fibo-fnd-utl-av:" [ label = "owl:imports" ];
+	"fibo-be-le-lp:" -> "fibo-fnd-pty-rl:" [ label = "owl:imports" ];
+	"fibo-be-le-lp:" -> "http://spec.edmcouncil.org/fibo/BE/20150801/LegalEntities/LegalPersons/" [ label = "owl:versionIRI" ];
+	"fibo-be-le-lp:" -> "fibo-fnd-pty-pty:" [ label = "owl:imports" ];
+	"fibo-be-le-lp:" -> "fibo-fnd-law-jur:" [ label = "owl:imports" ];
+	"fibo-be-le-lp:" -> "fibo-fnd-aap-ppl:" [ label = "owl:imports" ];
+	"NULL" -> "fibo-fnd-law-jur:Jurisdiction" [ label = "owl:onClass" ];
+	"NULL" -> "fibo-fnd-law-lcap:LiabilityCapacity" [ label = "owl:onClass" ];
+	"NULL" -> "fibo-be-le-lp:NaturalPerson" [ label = "owl:onClass" ];
+	"NULL" -> "fibo-be-le-lp:isRecognizedIn" [ label = "owl:onProperty" ];
+	"NULL" -> "fibo-fnd-law-lcap:SignatoryCapacity" [ label = "owl:onClass" ];
+	"NULL" -> "fibo-fnd-rel-rel:isConferredOn" [ label = "owl:onProperty" ];
+	"NULL" -> "fibo-fnd-law-lcap:hasCapacity" [ label = "owl:onProperty" ];
+	"NULL" -> "fibo-be-le-lp:isOrganizedIn" [ label = "owl:onProperty" ];
+	"NULL" -> "fibo-fnd-pty-rl:isPlayedBy" [ label = "owl:onProperty" ];
+	"NULL" -> "fibo-fnd-rel-rel:hasIdentity" [ label = "owl:onProperty" ];
+	"fibo-be-le-lp:LegalPerson" -> "fibo-be-le-lp:Signatory" [ label = "fibo-be-le-lp:designatesSignatory" ];
+	"fibo-be-le-lp:LegalEntity" -> "fibo-fnd-law-jur:Jurisdiction" [ label = "fibo-be-le-lp:isOrganizedIn" ];
+	"fibo-be-le-lp:LegalPerson" -> "fibo-fnd-law-jur:Jurisdiction" [ label = "fibo-be-le-lp:isRecognizedIn" ];
+
+}
