@@ -1,12 +1,10 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1000"
-node [shape = rectangle, color="black"]; "base:Hotel" "schema:Hostel" "base:Hostal" "cruzar:Alojamiento" "base:Alojamiento" "schema:BedAndBreakfast" "geonames:Feature" "base:Apartahotel" "schema:Motel" "schema:LodgingBusiness" "skos:Concept" "schema:Hotel" "base:Albergue" "-7fb1514d:14d87423780:-7ffb" "-7fb1514d:14d87423780:-7ffc" ; /*classes style*/
-	"base:Alojamiento" -> "-7fb1514d:14d87423780:-7ffc" [ label = "rdfs:subClassOf" ];
+node [shape = rectangle, color="black"]; "base:Hotel" "schema:Hostel" "base:Hostal" "cruzar:Alojamiento" "base:Alojamiento" "schema:BedAndBreakfast" "geonames:Feature" "base:Apartahotel" "schema:Motel" "schema:LodgingBusiness" "schema:Hotel" "base:Albergue" ; /*classes style*/
 	"base:Alojamiento" -> "cruzar:Alojamiento" [ label = "rdfs:subClassOf" ];
 	"base:Alojamiento" -> "geonames:Feature" [ label = "rdfs:subClassOf" ];
 	"base:Alojamiento" -> "schema:LodgingBusiness" [ label = "rdfs:subClassOf" ];
-	"base:Alojamiento" -> "-7fb1514d:14d87423780:-7ffb" [ label = "rdfs:subClassOf" ];
 	"schema:BedAndBreakfast" -> "schema:LodgingBusiness" [ label = "rdfs:subClassOf" ];
 	"base:Albergue" -> "base:Alojamiento" [ label = "rdfs:subClassOf" ];
 	"base:Albergue" -> "schema:Hostel" [ label = "rdfs:subClassOf" ];
