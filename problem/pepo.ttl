@@ -13,5 +13,5 @@
 ifc:PanelPosition_IfcWindowPanelProperties
         a            owl:ObjectProperty , owl:FunctionalProperty ;
         rdfs:domain  ifc:IfcWindowPanelProperties ;
-        rdfs:label   "PanelPosition " ;
+        rdfs:label   "PanelPosition" ;
         rdfs:range   ifc:IfcWindowPanelPositionEnum .
