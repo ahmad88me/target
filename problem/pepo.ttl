@@ -16,3 +16,7 @@ ifc:PanelPosition_IfcWindowPanelProperties
         rdfs:label   "PanelPosition" ;
         rdfs:range   ifc:IfcWindowPanelPositionEnum .
 
+
+
+
+
