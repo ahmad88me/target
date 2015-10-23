@@ -49,7 +49,6 @@
     //trying to fix the model still didn't help
     // changing imports again
     // struggling again and again and still
-    // something stange is happening, hopfully it would work
     //try reordering the imports in model
     //did work, now the model inside the function
     //testing it with the new gh-pages thing
